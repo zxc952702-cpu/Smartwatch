@@ -1284,7 +1284,7 @@ void OLED_EnergyTask(void)
 	if(SleepFlag == 1 && 
 		((Keytemp1 != KEYEvent_None && Keytemp1 != KEYEvent_LongTimeOut) ||
 			(Keytemp2 != KEYEvent_None &&Keytemp2 != KEYEvent_LongTimeOut) ||
-			RTC_AlarmSetFlag_Get() == 1))
+			RTC_AlarmITFlag_Get() == 1))
 	{
 		OLED_WakeUp();
 		fristtime = nowtime;
