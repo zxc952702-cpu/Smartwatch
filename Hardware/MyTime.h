@@ -11,6 +11,7 @@ time_t MyAlarm_Get(void);
 void MyAlarm_SaveFlag(void);
 void MyAlarm_Clear(void);
 uint8_t RTC_AlarmSetFlag_Get(void);
+uint8_t RTC_AlarmITFlag_Get(void);
 void RTCAlarm_Work(void);
 
 #endif
