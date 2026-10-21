@@ -1,7 +1,7 @@
 #include "stm32f10x.h"                  // Device header
 
 
-static uint32_t millisecond = 0;
+static volatile uint32_t millisecond = 0;
 
 void MyTIM_Init(void)
 {
