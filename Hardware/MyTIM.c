@@ -50,7 +50,7 @@ void MyTIM_TimeGet(uint32_t *sec, uint16_t *ms)
 	uint32_t millisecond1 = 0;
 	millisecond1 = millisecond;
 	*sec = millisecond1/1000;
-	*ms = millisecond;
+	*ms = millisecond1 %1000;
 }
 
 uint32_t MyTIM_millisecondGet(void)
