@@ -165,6 +165,11 @@ uint8_t RTC_AlarmSetFlag_Get(void)
 	return AlarmSetFlag;
 }
 
+uint8_t RTC_AlarmITFlag_Get(void)
+{
+	return Alarmitflag;
+}
+
 void MyAlarm_Clear(void)
 {
 	RTC_ITConfig(RTC_IT_ALR,DISABLE);
